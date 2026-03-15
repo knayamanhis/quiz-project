@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style 1 - Playful & Colorful</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4, #ffecd2);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 30px;
+      padding: 40px;
+      max-width: 560px;
+      width: 100%;
+      box-shadow: 0 20px 60px rgba(255, 100, 130, 0.3);
+    }
+    .badge {
+      background: linear-gradient(90deg, #ff6b9d, #ff9a57);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 16px;
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #2d2d2d;
+      margin-bottom: 10px;
+      line-height: 1.3;
+    }
+    .subtitle {
+      color: #999;
+      font-size: 14px;
+      margin-bottom: 32px;
+    }
+    .question {
+      font-size: 20px;
+      font-weight: 700;
+      color: #2d2d2d;
+      margin-bottom: 24px;
+    }
+    .option {
+      background: #fff5f8;
+      border: 2px solid #ffe0ec;
+      border-radius: 16px;
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: all 0.2s;
+      font-size: 15px;
+      color: #333;
+      font-weight: 500;
+    }
+    .option:hover { border-color: #ff6b9d; background: #fff0f5; transform: translateX(4px); }
+    .option.selected { border-color: #ff6b9d; background: linear-gradient(90deg, #fff0f5, #fff5ee); }
+    .emoji { font-size: 22px; }
+    .progress {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 28px;
+    }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: #ffe0ec; }
+    .dot.active { background: linear-gradient(90deg, #ff6b9d, #ff9a57); }
+    .style-label {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 13px;
+      color: #ccc;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">☕ Coffee Personality Quiz</div>
+    <h1>What's Your Coffee Personality?</h1>
+    <p class="subtitle">5 questions · Takes about 2 minutes</p>
+    <div class="progress">
+      <div class="dot active"></div>
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+    <p class="question">You find a mysterious door. What's behind it?</p>
+    <div class="option"><span class="emoji">🌋</span> A volcano — let's see what happens</div>
+    <div class="option selected"><span class="emoji">🛋️</span> A cozy reading nook with tea</div>
+    <div class="option"><span class="emoji">🍰</span> A giant dessert buffet</div>
+    <div class="option"><span class="emoji">🌿</span> A peaceful zen garden</div>
+    <div class="style-label">Style 1 — Playful & Colorful</div>
+  </div>
+</body>
+</html>

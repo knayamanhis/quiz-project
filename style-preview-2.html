@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style 2 - Minimal & Clean</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', serif;
+      background: #f9f9f7;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      padding: 52px;
+      max-width: 560px;
+      width: 100%;
+      border: 1px solid #ebebeb;
+    }
+    .label {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #aaa;
+      margin-bottom: 32px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 400;
+      color: #1a1a1a;
+      margin-bottom: 8px;
+      line-height: 1.3;
+    }
+    .subtitle {
+      color: #bbb;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 13px;
+      margin-bottom: 40px;
+    }
+    .progress-bar {
+      height: 1px;
+      background: #ebebeb;
+      margin-bottom: 40px;
+      position: relative;
+    }
+    .progress-fill {
+      height: 1px;
+      width: 40%;
+      background: #1a1a1a;
+    }
+    .progress-text {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 11px;
+      color: #ccc;
+      margin-top: 8px;
+      letter-spacing: 1px;
+    }
+    .question {
+      font-size: 22px;
+      color: #1a1a1a;
+      margin-bottom: 32px;
+      line-height: 1.5;
+      font-weight: 400;
+    }
+    .option {
+      padding: 18px 0;
+      border-bottom: 1px solid #f0f0f0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #555;
+      font-size: 15px;
+      font-family: 'Segoe UI', sans-serif;
+      transition: color 0.2s;
+    }
+    .option:hover { color: #1a1a1a; }
+    .option.selected { color: #1a1a1a; font-weight: 600; }
+    .arrow { color: #ccc; font-size: 18px; }
+    .option.selected .arrow { color: #1a1a1a; }
+    .style-label {
+      text-align: center;
+      margin-top: 40px;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 11px;
+      color: #ddd;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="label">Coffee Personality Quiz</div>
+    <h1>What's Your Coffee Personality?</h1>
+    <p class="subtitle">5 questions · 2 minutes</p>
+    <div class="progress-bar">
+      <div class="progress-fill"></div>
+    </div>
+    <div class="progress-text">Question 2 of 5</div>
+    <p class="question">You find a mysterious door.<br>What's behind it?</p>
+    <div class="option"><span>A volcano — let's see what happens</span><span class="arrow">→</span></div>
+    <div class="option selected"><span>A cozy reading nook with tea</span><span class="arrow">→</span></div>
+    <div class="option"><span>A giant dessert buffet</span><span class="arrow">→</span></div>
+    <div class="option"><span>A peaceful zen garden</span><span class="arrow">→</span></div>
+    <div class="style-label">Style 2 — Minimal & Clean</div>
+  </div>
+</body>
+</html>

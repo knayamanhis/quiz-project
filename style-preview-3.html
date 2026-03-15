@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Style 3 - Bold & Dramatic</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #0a0a0a;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: #111;
+      border: 1px solid #222;
+      padding: 44px;
+      max-width: 560px;
+      width: 100%;
+    }
+    .badge {
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: #c8a96e;
+      margin-bottom: 28px;
+      font-weight: 600;
+    }
+    h1 {
+      font-size: 32px;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 8px;
+      line-height: 1.2;
+      letter-spacing: -1px;
+      text-transform: uppercase;
+    }
+    .subtitle {
+      color: #444;
+      font-size: 13px;
+      margin-bottom: 36px;
+      letter-spacing: 1px;
+    }
+    .progress {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 36px;
+    }
+    .bar { height: 3px; flex: 1; background: #222; }
+    .bar.active { background: #c8a96e; }
+    .question {
+      font-size: 22px;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 28px;
+      line-height: 1.4;
+      letter-spacing: -0.5px;
+    }
+    .option {
+      border: 1px solid #222;
+      padding: 16px 20px;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      color: #777;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      transition: all 0.2s;
+    }
+    .option:hover { border-color: #c8a96e; color: #fff; }
+    .option.selected { border-color: #c8a96e; color: #fff; background: rgba(200, 169, 110, 0.05); }
+    .num {
+      font-size: 11px;
+      color: #c8a96e;
+      font-weight: 700;
+      letter-spacing: 1px;
+      min-width: 20px;
+    }
+    .style-label {
+      text-align: center;
+      margin-top: 28px;
+      font-size: 11px;
+      color: #333;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="badge">☕ Coffee Personality Quiz</div>
+    <h1>What's Your Coffee Personality?</h1>
+    <p class="subtitle">5 Questions · 2 Minutes</p>
+    <div class="progress">
+      <div class="bar active"></div>
+      <div class="bar active"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+    <p class="question">You find a mysterious door.<br>What's behind it?</p>
+    <div class="option"><span class="num">01</span> A volcano — let's see what happens</div>
+    <div class="option selected"><span class="num">02</span> A cozy reading nook with tea</div>
+    <div class="option"><span class="num">03</span> A giant dessert buffet</div>
+    <div class="option"><span class="num">04</span> A peaceful zen garden</div>
+    <div class="style-label">Style 3 — Bold & Dramatic</div>
+  </div>
+</body>
+</html>
